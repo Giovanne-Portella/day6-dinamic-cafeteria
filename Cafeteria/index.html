@@ -1,0 +1,130 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNC COFFEE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="Logo.png" alt="Logo Cafe DNC" class="m-2">
+      <a class="navbar-brand fw-bold fs-4" href="#" style="color:#2A3342;">DNC Coffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active ms-5 fw-semibold fs-5" aria-current="page" href="#"
+              style="color:#2A3342;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-5 fw-semibold fs-5" href="#" style="color:#2A3342;" data-bs-toggle="modal"
+              data-bs-target="#myModal">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-5 fw-semibold fs-5" href="#" style="color:#2A3342;" data-bs-toggle="modal"
+              data-bs-target="#myModal2">Atendimento</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-light fw-semibold fs-5 ms-auto" style="color:#2A3342; 
+        border-radius: 30px;">Fazer Pedido</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--Modal-->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="font-family: Montserrat;">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-5 text-center">
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header align-self-center">
+          <h1 class="modal-title fs-2 fw-lighter">Quem somos nós?</h1>
+        </div>
+        <div class="modal-body fs-4 fw-lighter">
+          <p class="lh-lg">Tudo o que fazemos procura respeitar essa conexão, desde nosso compromisso com o café de
+            melhor qualidade do mundo até a forma como nós interagimos com nossos clientes e nossas comunidades para
+            conduzir nosso negócio de modo responsável.</p>
+        </div>
+        <img src="card-modal.png" class="w-20 align-self-center">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade align-self-center" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="font-family: Montserrat;">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content p-5 text-center">
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header align-self-center">
+          <h1 class="modal-title fs-2 fw-lighter ">Atendimento</h1><br>
+        </div>
+        <div class="modal-body fs-4 fw-lighter">
+          <p class="lh-lg">Rua José de Alencar, 111, Centro <br>
+            CEP: 12209-000 | +55 (11) 3333-8000</p><br>
+          <a href="#" class="btn mt-5 w-50" style="background-color: #2A3342; color: #FFFFFF;">ENTRAR EM CONTATO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <img src="image 11.png" alt="" class="w-100">
+    <section class="d-flex  d-inline-flex row ms-3 mt-4 mb-4 me-3" >
+      <div id="card1" class="card col mx-4" style="border-radius: 20px;" onmouseover="aparecerBotao()" onmouseout="removerBotao()">
+          <img src="café1.png" class="card-img-top object-fit-cover mt-2" alt="Card Café 1">
+          <div class="card-body">
+            <p class="card-text pb-4">Nossa loja de café se encontra em um lugar, 100% fictício, porém caso se sinta
+              interessado pode vir tomar um café conosco em nossa sede em São José dos Campos.</p>
+              <!-- <a id="card" href="#" class="btn mt-4 w-100" style="background-color: #2A3342; color: #FFFFFF;">COMPRAR
+              AGORA</a> -->
+          </div>
+      </div>
+
+      <div id="card2" class="card col mx-4" style="border-radius: 20px" onmouseover="aparecerBotao()" onmouseout="removerBotao()">
+        <img src="café2.png" class="card-img-top object-fit-cover mt-2" alt="Card Café 2">
+        <div class="card-body">
+          <p class="card-text pb-3">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa
+            conversar, bons amigos e um ambiente sem igual. Aproveite, pois melhor que a DNC não existe!</p>
+          <!-- <a href="#" class="btn w-100" style="background-color: #2A3342; color: #FFFFFF;">COMPRAR AGORA</a> -->
+        </div>
+      </div>
+
+      <div id="card3" class="card col mx-4" style="border-radius: 20px" onmouseover="aparecerBotao()" onmouseout="removerBotao()">
+        <img src="café3.png" class="card-img-top object-fit-cover mt-2" alt="Card Café 3">
+        <div class="card-body">
+          <p class="card-text ">Por que a DNC? Porque podem contar sempre com um serviço genuíno, uma atmosfera
+            acolhedora e uma incrível xícara de café, torrado por especialistas e preparado de forma enriquecedora.</p>
+          <!-- <a id="botao_2" href="#" class="btn w-100" style="background-color: #2A3342; color: #FFFFFF;">COMPRAR AGORA</a> -->
+        </div>
+      </div>
+
+      <div id="card4" class="card col mx-4" style="border-radius: 20px" onmouseover="aparecerBotao()" onmouseout="removerBotao()">
+        <img src="café4.png" class="card-img-top object-fit-cover mt-2" alt="Card Café 4">
+        <div class="card-body">
+          <p class="card-text pb-3">A escola especialista em formar talentos, com foco em empregabilidade, migração de
+            carreira e aumento de performance.</p> <br>
+          <!-- <a href="#" class="btn mt-5 w-100" style="background-color: #2A3342; color: #FFFFFF;">COMPRAR AGORA</a> -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
