@@ -36,29 +36,29 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-44">
-          <div className="max-w-2xl">
-            <span className="inline-block text-accent font-medium text-sm tracking-widest uppercase mb-4">
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-24 sm:py-32 md:py-44">
+          <div className="max-w-2xl mx-auto text-center md:mx-0 md:text-left">
+            <span className="inline-block text-accent font-medium text-xs sm:text-sm tracking-widest uppercase mb-4">
               Bem-vindo à DNC Coffee
             </span>
-            <h1 className="text-4xl md:text-6xl font-[family-name:var(--font-display)] font-bold text-white leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-display)] font-bold text-white leading-tight mb-6">
               Onde cada xícara conta uma história
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+            <p className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
               Café artesanal de alta qualidade, grãos selecionados e torrados por
               especialistas. Um ambiente acolhedor para momentos especiais.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Link
                 to="/cardapio"
-                className="bg-accent text-white px-8 py-3.5 rounded-full font-semibold hover:bg-accent-dark transition-colors no-underline inline-flex items-center gap-2"
+                className="w-full sm:w-auto bg-accent text-white px-8 py-3.5 rounded-full font-semibold hover:bg-accent-dark transition-colors no-underline inline-flex items-center justify-center gap-2"
               >
                 Ver Cardápio
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 to="/sobre"
-                className="border-2 border-white/30 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/10 transition-colors no-underline"
+                className="w-full sm:w-auto border-2 border-white/30 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/10 transition-colors no-underline text-center"
               >
                 Conheça-nos
               </Link>
@@ -69,8 +69,8 @@ export default function Home() {
 
       {/* Info Strip */}
       <section className="bg-white border-b border-cream-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
             <div className="flex items-center justify-center gap-3">
               <Clock className="w-5 h-5 text-accent" />
               <span className="text-sm text-primary">Seg-Sex: 7h - 20h | Sáb: 8h - 18h</span>
@@ -88,8 +88,8 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-primary mb-4">
               Nosso Cardápio
@@ -117,8 +117,8 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex items-end justify-between mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-primary mb-4">
@@ -154,9 +154,9 @@ export default function Home() {
       </section>
 
       {/* About CTA */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=500&fit=crop"
@@ -196,8 +196,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-primary mb-4">
               O Que Dizem Nossos Clientes
@@ -223,7 +223,7 @@ export default function Home() {
 
       {/* CTA Banner */}
       <section className="bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12 sm:py-16 text-center">
           <h2 className="text-3xl md:text-4xl font-[family-name:var(--font-display)] font-bold text-white mb-4">
             Pronto para um café especial?
           </h2>
